@@ -1,0 +1,385 @@
+/* ベース */
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Meiryo", system-ui, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: none; }
+
+.container {
+  width: 1100px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+/* カラー系（メインカラーをまとめて定義しておくと調整しやすい） */
+
+:root {
+  --main-navy: #245b9a;       /* 明るめネイビー */
+  --main-navy-dark: #19426f;  /* 濃いめ（ホバーなど） */
+  --accent-gold: #e3b85a;
+}
+
+/* ヘッダー */
+
+.site-header {
+  border-bottom: 1px solid #e1e4ea;
+  background: #ffffff;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 5%;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--main-navy);
+}
+
+.logo-sub {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.contact-area {
+  text-align: right;
+  font-weight: 600;
+  color: var(--main-navy);
+}
+
+.contact-line {
+  margin: 0;
+}
+
+/* グローバルナビ */
+
+.global-nav {
+  background: var(--main-navy);
+}
+
+.global-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0 5%;
+}
+
+.global-nav li {
+  position: relative;
+}
+
+.global-nav li a {
+  display: block;
+  padding: 10px 18px;
+  color: #fff;
+  font-size: 14px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.15s ease;
+}
+
+/* ホバー時：背景を白寄り、文字をネイビーにして「浮き上がり感」 */
+.global-nav li a:hover {
+  background: #f5f7fb;
+  color: var(--main-navy-dark);
+  transform: translateY(-1px);
+}
+
+/* ヒーロー */
+
+.hero {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+}
+
+.hero-slide-1 {
+  width: 100%;
+  height: 100%;
+  /* プラント系のイメージ画像に差し替えてください */
+  background-image: url('/assets/img/hero-plant.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgba(10, 31, 56, 0.78),
+    rgba(36, 91, 154, 0.75)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 5%;
+}
+
+.hero-title {
+  font-size: 30px;
+  margin: 0 0 8px;
+  letter-spacing: 0.08em;
+}
+
+.hero-sub {
+  font-size: 16px;
+  letter-spacing: 0.22em;
+  margin: 0 0 16px;
+}
+
+.hero-lead {
+  font-size: 14px;
+  max-width: 640px;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+/* イントロ */
+
+.intro {
+  padding: 40px 0 24px;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 14px;
+  color: var(--main-navy-dark);
+}
+
+.intro p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+/* 4つのリンクカード（サービスなど） */
+
+.feature-links {
+  padding: 24px 0 40px;
+  background: #f5f7fb;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.feature-card {
+  display: block;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #ffffff;
+  color: #ffffff;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(0);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.feature-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.85);
+  transition: filter 0.25s ease;
+}
+
+/* 背景画像はお好みで差し替え */
+.feature-img-1 { background-image: url('/assets/img/feature-services.jpg'); }
+.feature-img-2 { background-image: url('/assets/img/feature-projects.jpg'); }
+.feature-img-3 { background-image: url('/assets/img/feature-workflow.jpg'); }
+.feature-img-4 { background-image: url('/assets/img/feature-download.jpg'); }
+
+.feature-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0,0,0,0.45);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.feature-label h3 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.feature-label p {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+}
+
+/* ホバー時：カード全体が少し浮き上がり、ネイビー基調＆文字を白に */
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+  background: var(--main-navy);
+}
+
+.feature-card:hover .feature-img {
+  filter: brightness(1);
+}
+
+.feature-card:hover .feature-label {
+  background: rgba(10, 31, 56, 0.75);
+  color: #ffffff;
+}
+
+/* お知らせ */
+
+.news {
+  padding: 32px 0 56px;
+}
+
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list li {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dashed #d7dde8;
+  gap: 12px;
+}
+
+.news-date {
+  width: 120px;
+  font-size: 14px;
+  color: #666;
+}
+
+.news-list a {
+  flex: 1;
+  font-size: 14px;
+  position: relative;
+  padding-right: 12px;
+  transition: color 0.2s ease;
+}
+
+/* お知らせタイトルにカーソルを載せたとき少し色を変える */
+.news-list a:hover {
+  color: var(--main-navy-dark);
+}
+
+.news-badge {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+/* フッター */
+
+.site-footer {
+  background: #f1f3f7;
+  margin-top: 40px;
+  padding-top: 24px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5% 16px;
+}
+
+.footer-logo {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--main-navy);
+}
+
+.footer-address {
+  font-size: 13px;
+  color: #555;
+  margin: 0;
+}
+
+.footer-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav li a {
+  font-size: 13px;
+  display: block;
+  padding: 2px 0;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.footer-nav li a:hover {
+  color: var(--main-navy-dark);
+}
+
+.footer-copy {
+  border-top: 1px solid #d6dde9;
+  text-align: center;
+  font-size: 11px;
+  padding: 8px 0 12px;
+  color: #777;
+}
+
+/* ざっくりスマホ対応（最低限） */
+
+@media (max-width: 900px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .contact-area {
+    text-align: left;
+  }
+
+  .global-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    height: 320px;
+  }
+
+  .hero-title {
+    font-size: 22px;
+  }
+
+  .hero-sub {
+    font-size: 13px;
+  }
+
+  .hero-lead {
+    font-size: 12px;
+  }
+}
