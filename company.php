@@ -1,4 +1,4 @@
-<?php include __DIR__ . '/includes/header.php'; ?>
+<?php include __DIR__ . '/includes/header-global.php'; ?>
 
 <section class="page-header">
   <div class="container">
@@ -13,13 +13,19 @@
       <h2 class="section-title">会社概要</h2>
       <dl class="company-info">
         <dt>会社名</dt>
-        <dd>丸幸商会</dd>
+        <dd>株式会社丸幸商会</dd>
         <dt>所在地</dt>
-        <dd>〒111-0000 東京都神田神保町1-10-1</dd>
+        <dd>〒101-0032<br>東京都千代田区岩本町２丁目７番３号</dd>
+        <dt>TEL</dt>
+        <dd>03-3862-1561</dd>
+        <dt>FAX</dt>
+        <dd>03-3862-1564</dd>
+        <dt>メールアドレス</dt>
+        <dd>プラント設計：marta@mwb.biglobe.ne.jp<br>理化学器械：marta@mwb.biglobe.ne.jp</dd>
         <dt>設立</dt>
         <dd>2025年12月</dd>
         <dt>事業内容</dt>
-        <dd>プラント設計マネジメント・設計コンサルティング</dd>
+        <dd>プラント設計マネジメント・設計コンサルティング<br>理化学機器販売 及び 卸業</dd>
         <dt>代表者</dt>
         <dd>代表取締役 丸田 秀幸</dd>
       </dl>

@@ -1,4 +1,4 @@
-<?php include __DIR__ . '/includes/header.php'; ?>
+<?php include __DIR__ . '/includes/header-plant.php'; ?>
 
 <section class="page-header">
   <div class="container">
@@ -9,19 +9,19 @@
 
 <section class="page-content">
   <div class="container">
-    <div class="content-section">
-      <h2 class="section-title">プロジェクト実績</h2>
-      <p class="lead-text">
+    <div class="content-section text-center">
+      <h2 class="section-title">Project History</h2>
+      <p class="lead-text" style="max-width: 800px; margin: 0 auto;">
         これまでに様々なプラント建設プロジェクトにおいて、設計マネジメント・
         設計コンサルティング業務を担当してまいりました。
       </p>
     </div>
 
-    <div class="project-list">
+    <div class="project-list" style="max-width: 900px; margin: 0 auto;">
       <div class="project-item">
         <div class="project-header">
           <h3 class="project-title">xxxxx新設プロジェクト</h3>
-          <span class="project-year">2025年</span>
+          <span class="project-year">2025</span>
         </div>
         <p class="project-description">
           xxxxxの新設プロジェクトにおいて、設計マネジメント業務を担当。
@@ -38,7 +38,7 @@
       <div class="project-item">
         <div class="project-header">
           <h3 class="project-title">xxxxxxプロジェクト</h3>
-          <span class="project-year">2025年</span>
+          <span class="project-year">2025</span>
         </div>
         <p class="project-description">
           xxxxxxの改修プロジェクトにおいて、設計コンサルティング業務を担当。
@@ -54,7 +54,7 @@
       <div class="project-item">
         <div class="project-header">
           <h3 class="project-title">水処理プラント設計支援プロジェクト</h3>
-          <span class="project-year">2025年</span>
+          <span class="project-year">2025</span>
         </div>
         <p class="project-description">
           水処理プラントの設計支援プロジェクトにおいて、設計マネジメントと
@@ -70,5 +70,9 @@
   </div>
 </section>
 
-<?php include __DIR__ . '/includes/footer.php'; ?>
+<a href="/" class="floating-home-btn" aria-label="総合トップに戻る">
+  <i class="ri-home-4-line"></i>
+  <span>TOP</span>
+</a>
 
+<?php include __DIR__ . '/includes/footer.php'; ?>

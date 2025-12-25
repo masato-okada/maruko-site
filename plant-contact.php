@@ -1,4 +1,4 @@
-<?php include __DIR__ . '/includes/header.php'; ?>
+<?php include __DIR__ . '/includes/header-plant.php'; ?>
 
 <section class="page-header">
   <div class="container">
@@ -11,7 +11,7 @@
   <div class="container">
     <div class="content-section">
       <p class="lead-text">
-        お問い合わせ・ご相談は、以下のフォームより
+        プラント設計事業に関するお問い合わせ・ご相談は、以下のフォームより
         お気軽にご連絡ください。
       </p>
     </div>
@@ -19,7 +19,7 @@
     <div class="contact-section contact-section-form-only">
       <div class="contact-form">
         <h2 class="section-title">お問い合わせフォーム</h2>
-        <form action="/contact.php" method="post" class="form">
+        <form action="/plant-contact.php" method="post" class="form">
           <div class="form-group">
             <label for="name" class="form-label">お名前 <span class="required">必須</span></label>
             <input type="text" id="name" name="name" class="form-input" required>
@@ -53,6 +53,11 @@
     </div>
   </div>
 </section>
+
+<a href="/" class="floating-home-btn" aria-label="総合トップに戻る">
+  <i class="ri-home-4-line"></i>
+  <span>TOP</span>
+</a>
 
 <?php include __DIR__ . '/includes/footer.php'; ?>
 

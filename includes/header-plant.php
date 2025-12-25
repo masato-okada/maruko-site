@@ -2,9 +2,9 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>丸幸商会｜プラント設計マネジメント・設計コンサルティング</title>
+  <title>プラント設計事業｜丸幸商会</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="丸幸商会は、プラント建設業界における設計マネジメント・設計コンサルティングを主軸とし、基本計画から詳細設計、調整業務まで一貫して支援します。">
+  <meta name="description" content="丸幸商会のプラント設計事業部。設計マネジメント、コンサルティング、DX支援など。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,21 +15,21 @@
 <header class="site-header">
   <div class="container header-inner">
     <div class="logo-area">
-      <a href="/" class="logo-link">
+      <a href="/plant.php" class="logo-link">
         <img src="/assets/img/logo.png" alt="丸幸商会" class="logo-image">
-        <span class="logo-text">丸幸商会</span>
+        <span class="logo-text">丸幸商会</span> <span style="font-size: 0.8em; opacity: 0.8;">| プラント設計事業部</span>
       </a>
-      <p class="logo-sub">プラント設計マネジメント・設計コンサルティング</p>
     </div>
 
     <nav class="global-nav">
       <ul>
-        <li><a href="/"><i class="ri-home-line nav-icon"></i>トップ</a></li>
-        <li><a href="/company.php"><i class="ri-building-line nav-icon"></i>会社案内</a></li>
+        <li><a href="/plant.php"><i class="ri-home-line nav-icon"></i>事業部トップ</a></li>
         <li><a href="/services.php"><i class="ri-service-line nav-icon"></i>サービス</a></li>
         <li><a href="/projects.php"><i class="ri-briefcase-line nav-icon"></i>実績紹介</a></li>
-        <li><a href="/news.php"><i class="ri-newspaper-line nav-icon"></i>お知らせ</a></li>
-        <li><a href="/contact.php"><i class="ri-mail-line nav-icon"></i>お問い合わせ</a></li>
+        <li><a href="/plant-news.php"><i class="ri-newspaper-line nav-icon"></i>お知らせ</a></li>
+        <li><a href="/plant-contact.php"><i class="ri-mail-line nav-icon"></i>お問い合わせ</a></li>
+        <li class="nav-divider">|</li>
+        <li><a href="/"><i class="ri-arrow-go-back-line nav-icon"></i>総合トップ</a></li>
       </ul>
     </nav>
 
